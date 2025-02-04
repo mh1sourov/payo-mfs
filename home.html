@@ -15,7 +15,7 @@
         <div class="mockup-phone border-primary">
           <div class="camera"></div>
           <div class="display">
-            <div class="artboard artboard-demo phone-2">
+            <div  class=" artboard artboard-demo phone-2">
                 <div class="stats shadow">
                     <div class="stat">
                       
@@ -26,12 +26,13 @@
                   <div class="divider"></div>
 
                   <div class="">
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Add Money</button>
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Cash Out</button>
+                    <button id="addMoneySectionSwitch" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Add Money</button>
+                    <button id="cashOutMoneySectionSwitch" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Cash Out</button>
                   </div>
                   <div class="divider"></div>
 
-                  <div class="card bg-base-200 w-full max-w-sm shrink-0 ">
+                <!-- Add Money setion start Here -->
+                <div id="addMoneySection" class=" card bg-base-200 w-full max-w-sm shrink-0 ">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -51,6 +52,32 @@
                       </div>
                     </form>
                   </div>
+                <!-- Add Money section ends here -->
+
+                <!-- Cash Out Section Start here -->
+                       
+                <div id="cashOutSection" class="hidden card bg-base-200 w-full max-w-sm shrink-0 ">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount how much you want to Cash Out</span>
+                        </label>
+                        <input id="CashOutAmount" type="text" placeholder="Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="Cash-OutPinNumber" type="password" placeholder="Pin Number" class="input input-bordered" required />
+
+                      </div>
+                      <div class="form-control mt-6">
+                        <button class="btn btn-primary" id="btn-CashOut">Cash Out</button>
+                      </div>
+                    </form>
+                  </div>
+
+                <!-- Cash Out Section Ends here -->
 
             </div>
             
@@ -60,5 +87,6 @@
       </div>
     </main>
     <script src="./js/home.js"></script>
+    <script src="./js/cashOut.js"></script>
   </body>
 </html>

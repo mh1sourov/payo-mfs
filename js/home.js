@@ -25,6 +25,24 @@ document
 
 
     } else {
-      console.log("Failed to add money due to wrong password");
+      alert("Money Added failed")
+      window.location.href = "index.html"
     }
   });
+
+// 
+  const cashOutSwitchButton = document.getElementById("cashOutMoneySectionSwitch");
+  cashOutSwitchButton.addEventListener("click", function(){
+
+    console.log("button clicked")
+    document.getElementById("cashOutSection").classList.remove("hidden");
+    document.getElementById("addMoneySection").classList.add("hidden");
+  })
+
+  const addMoneySwitchButton = document.getElementById("addMoneySectionSwitch");
+  addMoneySwitchButton.addEventListener("click", function(){
+
+    console.log("button clicked")
+    document.getElementById("cashOutSection").classList.add("hidden");
+    document.getElementById("addMoneySection").classList.remove("hidden");
+  })
