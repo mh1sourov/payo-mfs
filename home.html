@@ -19,13 +19,13 @@
                 <div class="stats shadow">
                     <div class="stat">
                       
-                      <div class="stat-value">89,400</div>
+                      <div id="account-balance" class="stat-value">9400</div>
                       <div class="stat-desc text-center">Available Balance</div>
                     </div>
                   </div>
                   <div class="divider"></div>
 
-                  <div class="justify-center items-center items-center">
+                  <div class="">
                     <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Add Money</button>
                     <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Cash Out</button>
                   </div>
@@ -37,17 +37,17 @@
                         <label class="label">
                           <span class="label-text">Amount</span>
                         </label>
-                        <input id="phone-number" type="text" placeholder="Amount" class="input input-bordered" required />
+                        <input id="inputAddMoney" type="text" placeholder="Amount" class="input input-bordered" required />
                       </div>
                       <div class="form-control">
                         <label class="label">
                           <span class="label-text">Pin</span>
                         </label>
-                        <input id="pin" type="password" placeholder="Pin" class="input input-bordered" required />
+                        <input id="pinNumber" type="password" placeholder="Pin Number" class="input input-bordered" required />
 
                       </div>
                       <div class="form-control mt-6">
-                        <button class="btn btn-primary" id="btn-login">Add Money</button>
+                        <button class="btn btn-primary" id="btn-addMoney">Add Money</button>
                       </div>
                     </form>
                   </div>
@@ -59,6 +59,6 @@
 
       </div>
     </main>
-    <script src="home.js"></script>
+    <script src="./js/home.js"></script>
   </body>
 </html>
